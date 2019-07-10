@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { ToastService } from './toast/toast.service';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,7 +10,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'example-angular-toast-service';
 
+  constructor(private readonly toastService: ToastService) {
+  }
+
   public doToast(): void {
-    alert('doToast');
+    this.toastService.open('doToast');
   }
 }

@@ -4,4 +4,9 @@ import { Injectable } from '@angular/core';
 export class ToastService {
 
   constructor() { }
+
+  public open(message: string): void {
+    alert(message);
+  }
+
 }
