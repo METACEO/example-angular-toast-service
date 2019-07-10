@@ -23,7 +23,7 @@ export class ToastService {
       clearTimeout(this.closingSetTimeout);
     }
 
-    // If a toast component hasn't been made, make one:
+    // If a toast component hasn't been made, or has been destroyed, make one:
     if (!this.componentRef) {
       // Create the component factory that provides us the component reference:
       const componentFactory = this.toastModuleNgModuleRef.componentFactoryResolver.resolveComponentFactory(ToastComponent);
@@ -42,6 +42,7 @@ export class ToastService {
     this.closingSetTimeout = setTimeout(() => {
       this.applicationRef.detachView(this.componentRef.hostView);
       this.componentRef.destroy();
+      this.componentRef = null;
     }, timeout);
   }
 
