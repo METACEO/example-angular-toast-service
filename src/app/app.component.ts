@@ -14,6 +14,6 @@ export class AppComponent {
   }
 
   public doToast(): void {
-    this.toastService.open('doToast');
+    this.toastService.open(`Hello world ${Date.now()}`);
   }
 }
