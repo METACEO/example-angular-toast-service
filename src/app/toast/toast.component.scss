@@ -1,0 +1,23 @@
+:host {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 0;
+  width: 100%;
+  overflow: visible;
+
+  .toast-message {
+    background: #dd0031;
+    color: #ffffff;
+    position: relative;
+    bottom: 70px;
+    // This makes a 60px high box (10+10+20+10+10)
+    border: 10px solid #c3002f;
+    padding: 10px 39px;
+    line-height: 20px;
+    height: 20px;
+  }
+}
