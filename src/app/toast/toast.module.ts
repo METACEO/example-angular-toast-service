@@ -5,7 +5,12 @@ import { ToastComponent } from './toast.component';
 import { ToastService } from './toast.service';
 
 @NgModule({
-  entryComponents: [ToastComponent],
+  declarations: [
+    ToastComponent
+  ],
+  entryComponents: [
+    ToastComponent
+  ],
   providers: [
     ToastService
   ],

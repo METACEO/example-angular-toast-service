@@ -24,7 +24,7 @@ export class ToastService {
     this.document.body.appendChild(domElem);
 
     // Do message:
-    alert(message);
+    componentRef.instance.message = message;
 
     // Remove message:
     this.applicationRef.detachView(componentRef.hostView);
