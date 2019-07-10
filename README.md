@@ -1,5 +1,7 @@
 # ExampleAngularToastService
 
+In response to [this Reddit question](https://www.reddit.com/r/Angular2/comments/cb9i0s/trigger_method_in_child_component_without/) and for any future reference.
+
 <p align="center">
   <a href="https://github.com/METACEO/example-angular-toast-service">
     <img src="https://raw.githubusercontent.com/METACEO/example-angular-toast-service/master/README-header.png" alt="Toast Component Screenshot" />
