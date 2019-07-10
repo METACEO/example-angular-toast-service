@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'example-angular-toast-service';
+
+  public doToast(): void {
+    alert('doToast');
+  }
 }
